@@ -142,7 +142,7 @@ const plugin = (file, librarySettings, inputs, otherArguments) => {
     } else {
       response.processFile = true;
       response.preset =
-        '-Z "H.265 MKV 2160p60"-Z "H.265 MKV 2160p60" -e qsv_h265 --encoder-preset quality -q 24 -E copy –audio-fallback aac --all-audio --all-subtitles --decomb  --enable-qsv-decoding';
+        '-Z "H.265 MKV 2160p60" -e qsv_h265 --encoder-preset quality -q 24 -E copy –audio-fallback aac --all-audio --all-subtitles --decomb  --enable-qsv-decoding';
       response.container = ".mkv";
       response.handBrakeMode = true;
       response.FFmpegMode = false;
